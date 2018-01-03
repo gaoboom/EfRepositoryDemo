@@ -1,0 +1,13 @@
+﻿using Domain.BaseModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Domain.CoreModels
+{
+    public class UserJournalResult:IEntity
+    {
+    }
+}
