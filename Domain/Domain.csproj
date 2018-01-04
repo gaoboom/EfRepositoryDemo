@@ -54,6 +54,7 @@
     <Compile Include="RepositoryInterface\IUnitOfWork.cs" />
     <Compile Include="RepositoryInterface\PagedResult.cs" />
     <Compile Include="RepositoryInterface\SortOrder.cs" />
+    <Compile Include="Specifications\AnySpecification.cs" />
     <Compile Include="Specifications\ExpressionSpecification.cs" />
     <Compile Include="Specifications\ISpecification.cs" />
     <Compile Include="Specifications\Specification.cs" />
