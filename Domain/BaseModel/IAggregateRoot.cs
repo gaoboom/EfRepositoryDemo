@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.BaseModel
 {
-    interface IAggregateRoot:IEntity
+    public interface IAggregateRoot:IEntity
     {
     }
 }

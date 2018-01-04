@@ -47,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EfRepo.cs" />
+    <Compile Include="EfRepoContext.cs" />
     <Compile Include="EsbBaseDbContext.cs" />
+    <Compile Include="IEfRepoContext.cs" />
     <Compile Include="Mapping\UserEnterpriseInfoMap.cs" />
     <Compile Include="Mapping\UserJournalResultMap.cs" />
     <Compile Include="Mapping\UserMap.cs" />

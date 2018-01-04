@@ -9,7 +9,7 @@ namespace Domain.RepositoryInterface
     /// <summary>
     /// 工作单元基类接口
     /// </summary>
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         bool Commit();
     }

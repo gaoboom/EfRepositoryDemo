@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Specifications
 {
-    interface ISpecification<T>
+    public interface ISpecification<T>
     {
         bool IsSatisfiedBy(T candidate);
 

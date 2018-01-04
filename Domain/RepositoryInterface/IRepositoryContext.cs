@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.RepositoryInterface
 {
-    interface IRepositoryContext:IUnitOfWork
+    public interface IRepositoryContext:IUnitOfWork
     {
         /// <summary>
         /// 用来标识仓储上下文

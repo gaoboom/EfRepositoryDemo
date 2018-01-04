@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Domain.RepositoryInterface
 {
-    interface IRepository<TAggregateRoot> where TAggregateRoot : IAggregateRoot
+    public interface IRepository<TAggregateRoot> where TAggregateRoot : IAggregateRoot
     {
         #region 方法
         void Add(TAggregateRoot aggregateRoot);
