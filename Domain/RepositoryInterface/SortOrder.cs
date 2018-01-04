@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.RepositoryInterface
 {
-    public class Class1
+    public enum SortOrder
     {
+        UnSpecified = -1,
+        Ascending = 0,
+        Descending = 1
     }
 }

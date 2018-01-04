@@ -12,7 +12,7 @@ namespace Domain.CoreModels
     /// </summary>
     public class User: AggregateRoot
     {
-        public int RowID { get; set; }
+        //public int RowID { get; set; }
 
         public Guid UserID { get; set; }
 
@@ -23,5 +23,11 @@ namespace Domain.CoreModels
         public int UserType { get; set; }
 
         public byte[] RowVersion { get; set; }
+
+        public virtual List<UserPersonalInfo> UserPersonalInfoList { get; set; }
+
+        public virtual List<UserEnterpriseInfo> UserEnterpriseInfoList { get; set; }
+
+        public virtual UserJournalResult UserJournalResult { get; set; }
     }
 }
