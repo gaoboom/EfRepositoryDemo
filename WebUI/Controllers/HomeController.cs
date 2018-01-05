@@ -16,9 +16,30 @@ namespace WebUI.Controllers
             EfRepoContext efRepoContext = new EfRepoContext();
             UserRepository userRepository = new UserRepository(efRepoContext);
             UserBusinessLogic ubl = new UserBusinessLogic(efRepoContext, userRepository);
+            ViewBag.ContextID = efRepoContext.Id;
             var a = ubl.GetAllUsers();
-            int b = 0;
-            return View();
+            return View(a);
+        }
+
+        public ActionResult Index2()
+        {
+            EfRepoContext efRepoContext = new EfRepoContext();
+            UserRepository userRepository = new UserRepository(efRepoContext);
+            UserBusinessLogic ubl = new UserBusinessLogic(efRepoContext, userRepository);
+            var a = ubl.GetAllUsers();
+            ViewBag.ContextID = efRepoContext.Id;
+            return View("Index", a);
+        }
+
+        public ActionResult Index3()
+        {
+            EfRepoContext efRepoContext = new EfRepoContext();
+            UserRepository userRepository = new UserRepository(efRepoContext);
+            UserBusinessLogic ubl = new UserBusinessLogic(efRepoContext, userRepository);
+            var a = ubl.GetAllUsers();
+            a[0].UserAccount = "BenBenBen";
+            ViewBag.ContextID = efRepoContext.Id;
+            return View("Index", a);
         }
 
         public ActionResult About()

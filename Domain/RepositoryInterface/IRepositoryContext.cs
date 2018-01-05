@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.RepositoryInterface
 {
-    public interface IRepositoryContext:IUnitOfWork
+    public interface IRepositoryContext
     {
         /// <summary>
         /// 用来标识仓储上下文
@@ -22,5 +22,7 @@ namespace Domain.RepositoryInterface
 
         void RegisterDeleted<TAggregateRoot>(TAggregateRoot entity)
             where TAggregateRoot : class, IAggregateRoot;
+
+        bool Commit();
     }
 }
