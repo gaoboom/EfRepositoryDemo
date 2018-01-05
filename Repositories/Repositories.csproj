@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainRepositories\UserRepository.cs" />
     <Compile Include="EfRepo.cs" />
     <Compile Include="EfRepoContext.cs" />
     <Compile Include="EsbBaseDbContext.cs" />

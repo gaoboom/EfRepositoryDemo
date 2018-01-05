@@ -52,6 +52,7 @@
     <Compile Include="RepositoryInterface\IRepository.cs" />
     <Compile Include="RepositoryInterface\IRepositoryContext.cs" />
     <Compile Include="RepositoryInterface\IUnitOfWork.cs" />
+    <Compile Include="RepositoryInterface\IUserRepository.cs" />
     <Compile Include="RepositoryInterface\PagedResult.cs" />
     <Compile Include="RepositoryInterface\SortOrder.cs" />
     <Compile Include="Specifications\AnySpecification.cs" />

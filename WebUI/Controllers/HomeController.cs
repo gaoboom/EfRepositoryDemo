@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Repositories;
+using Repositories.DomainRepositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebUI.BusinessLogic;
 
 namespace WebUI.Controllers
 {
@@ -10,6 +13,11 @@ namespace WebUI.Controllers
     {
         public ActionResult Index()
         {
+            EfRepoContext efRepoContext = new EfRepoContext();
+            UserRepository userRepository = new UserRepository(efRepoContext);
+            UserBusinessLogic ubl = new UserBusinessLogic(efRepoContext, userRepository);
+            var a = ubl.GetAllUsers();
+            int b = 0;
             return View();
         }
 
